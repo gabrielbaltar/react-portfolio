@@ -1,0 +1,70 @@
+
+.navbar-container {
+    max-width: 100%;
+    display: flex;
+    padding: 2.5rem 1.5rem;
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;    
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navbar-content a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-mobile-icon {
+    display: none;
+}
+
+.available-tag p {
+    font-size: 0.8125rem;
+    font-weight: 400;
+}
+
+.available-tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #262626;
+    padding: 4px 20px;
+    border-radius: 1.5rem;
+    gap: 12px;
+}
+
+.available-tag span {
+    height: 5px;
+    width: 5px;
+    background-color: #2B980D;
+    border-radius: 50%;
+    z-index: 1;
+    animation: available-tag-animation 1.5s infinite;
+}
+
+@keyframes available-tag-animation {
+
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+       opacity: 0;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .menu-mobile-icon {
+        display: block;
+    }
+
+    .available-tag {
+        display: none;
+    }
+
+}
