@@ -1,0 +1,4 @@
+# public/robots.txt
+User-agent: *
+Allow: /
+Sitemap: https://react-portfolio-f6e6hcxu5-gabrielbaltars-projects.vercel.app/sitemap.xml
