@@ -1,5 +1,6 @@
 import Logo from '../../assets/logo.svg'
 import MobileLogo from '../../assets/logoMobile.svg'
+import { Link } from 'react-router-dom'
 import './styles.css'
 
 function Header() {
@@ -8,7 +9,9 @@ function Header() {
     <header className="navbar-container">
       <nav className='navbar-content'>
 
-        <a href="#"><img src={Logo} alt="Logo do portfólio de Gabriel Baltar Pereira" /></a>
+        <Link to="/">
+          <a href="#"><img src={Logo} alt="Logo do portfólio de Gabriel Baltar Pereira" /></a>
+        </Link>
 
         <div className='available-tag'>
             <span></span>

@@ -1,24 +1,28 @@
-import { useState } from 'react'
-import Header from '../../components/Header'
+import { Link } from 'react-router-dom'
 import './Main.css'
 
 function Main() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       
       <div className="main-content">
+
         <h1>
           Designing the Future, One Pixel at a Time
         </h1>
+
         <p>
-        Greetings! I'm a Web Developer living in Brazil. I favor minimalistic designs with a
+        Greetings! Web Developer living in Brazil. I favor minimalistic designs with a
         strong passion for low-code as well as user interactions. 🚀
         </p>
-        <button>
-          Entrar em contato
-        </button>
+
+          <Link className="contact-link" to="/index.jsx">
+            <button>
+              Entrar em contato
+            </button>
+          </Link>
+
       </div>
       
     </>
