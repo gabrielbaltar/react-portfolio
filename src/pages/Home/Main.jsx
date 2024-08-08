@@ -8,7 +8,17 @@ function Main() {
   return (
     <>
       
-      <div>
+      <div className="main-content">
+        <h1>
+          Designing the Future, One Pixel at a Time
+        </h1>
+        <p>
+        Greetings! I'm a Web Developer living in Brazil. I favor minimalistic designs with a
+        strong passion for low-code as well as user interactions. 🚀
+        </p>
+        <button>
+          Entrar em contato
+        </button>
       </div>
       
     </>
