@@ -21,6 +21,7 @@ h1 {
   gap: 1rem;
   padding: 2rem;
   max-height: auto;
+  margin-bottom: 6rem;
 }
 
 .main-content h1 {
@@ -57,6 +58,84 @@ h1 {
   max-width: 100%;
 }
 
+.title-and-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+}
+.title-and-link h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+
+.title-and-link a {
+  text-decoration: none;
+  color: #ffffff;
+  line-height: 21px;
+  letter-spacing: -0.3px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.my-work-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-bottom: 120px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  padding: 0px 32px;
+  gap: 1rem;
+}
+
+.cards {
+  overflow: hidden;
+  border-radius: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+  
+}
+
+.cards a {
+  display: block;
+  max-width: 460px;
+  width: 100%;
+}
+
+.cards a img {
+  display: flex;
+  height: auto;
+  border-radius: 1rem;
+  transition: transform 0.3s;
+  object-fit: cover;
+  width: 100%;
+  max-width: 460px;
+}
+
+.cards a img:hover {
+  transform: scale(1.05);
+  
+}
+
+@media screen and (max-width: 1000px) {
+
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    padding: 0px 20px;
+    gap: 1rem;
+    
+  }
+
+}
 
 @media screen and (max-width: 768px) {
 
@@ -108,6 +187,23 @@ h1 {
     
   }
 
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .my-work-container {
+    gap: 1rem;
+  }
+  
+
 }
 
 @media screen and (max-width: 450px) {
@@ -128,9 +224,7 @@ h1 {
   }
 
   .contact-link button {
-
     width: 450px;
-
   }
 
 }

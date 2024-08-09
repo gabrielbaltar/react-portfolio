@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom'
+import CardThumb from '../../assets/card-thumb.png'
 import './Main.css'
 function Main() {
 
   return (
     <>
       
-      <div className="main-content">
+      <main className="main-content">
 
         <div className='available-tag-main'>
             <span></span>
@@ -27,7 +28,58 @@ function Main() {
           </button>
         </Link>
 
-      </div>
+      </main>
+
+      <section className='my-work-container'>
+        <div className='title-and-link'>
+          <h2>
+            My Work
+          </h2>
+          <a href="#">Mais projetos</a>
+        </div>
+        <div className='cards-container'>
+          <div className='cards'> 
+            <a href="#"><img src={CardThumb} alt="Capa do projeto" /></a>
+            <div className='card-name'>
+
+            </div>
+          </div>
+          <div className='cards'> 
+            <a href="#"><img src={CardThumb} alt="Capa do projeto" /></a>
+            <div className='card-name'>
+
+            </div>
+          </div>
+        </div>
+        <div className='cards-container'>
+          <div className='cards'> 
+            <a href="#"><img src={CardThumb} alt="Capa do projeto" /></a>
+            <div className='card-name'>
+
+            </div>
+          </div>
+          <div className='cards'> 
+            <a href="#"><img src={CardThumb} alt="Capa do projeto" /></a>
+            <div className='card-name'>
+
+            </div>
+          </div>
+        </div>
+        <div className='cards-container'>
+          <div className='cards'> 
+            <a href="#"><img src={CardThumb} alt="Capa do projeto" /></a>
+            <div className='card-name'>
+
+            </div>
+          </div>
+          <div className='cards'> 
+            <a href="#"><img src={CardThumb} alt="Capa do projeto" /></a>
+            <div className='card-name'>
+
+            </div>
+          </div>
+        </div>
+      </section>
       
     </>
   )
