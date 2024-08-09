@@ -2,12 +2,11 @@ import './styles.css';
 
 const Contact = () => { 
 
-
-
-
   return (
     <div className="contact">
-      <h1>Página de Contatoasdasds</h1>
+      <h1>
+        Touch base via form or connect directly
+      </h1>
     </div>
   );
   

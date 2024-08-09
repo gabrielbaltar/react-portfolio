@@ -9,6 +9,10 @@ h1 {
   margin: 0px;
 }
 
+.available-tag-main {
+  display: none;
+} 
+
 .main-content {
   display: flex;
   flex-direction: column;
@@ -37,7 +41,7 @@ h1 {
   margin-bottom: 24px;
 }
 
-.main-content button {
+.contact-link button {
   background-color: #ffffff;
   line-height: 24px;
   letter-spacing: -0.1px;
@@ -50,4 +54,83 @@ h1 {
   color: #0A0A0A;
   font-size: 0.875rem;
   cursor: pointer;
+  max-width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .main-content {
+    padding: 0px 1.25rem;
+  }
+
+  .main-content h1 {
+    font-size: 3rem;
+    line-height: 120%;
+  }
+
+  .main-content p {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .available-tag-main p {
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin: 0px;
+    color: #ffffff;
+  }
+  
+  .available-tag-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #262626;
+    padding: 4px 20px;
+    border-radius: 1.5rem;
+    height: 1.5rem;
+    gap: 12px;
+    border: 1px solid #333333;
+  }
+  
+  .available-tag-main span {
+    height: 5px;
+    width: 5px;
+    background-color: #23B064;
+    border-radius: 50%;
+    z-index: 1;
+    animation: available-tag-animation 1.5s infinite;
+    
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+
+  .main-content h1 {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1px;
+    margin-top: 1rem;
+  }
+
+  .contact-link   {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .contact-link button {
+
+    width: 450px;
+
+  }
+
 }
