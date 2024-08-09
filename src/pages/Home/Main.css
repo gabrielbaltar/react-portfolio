@@ -225,6 +225,11 @@ h1 {
 
   .contact-link button {
     width: 450px;
+    min-height: 3rem;
+  }
+
+  .title-and-link {
+    margin-bottom: 1rem;
   }
 
 }
