@@ -6,18 +6,21 @@ import Contact from './pages/Contact/index.jsx'
 import Projects from './pages/Projects/projects.jsx'
 import Header from './components/Header/index.jsx'
 import Footer from './components/Footer/footer.jsx'
+import { SnackbarProvider } from 'notistack';
 import './index.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/index.jsx" element={<Contact />} />
-        <Route path="/projects.jsx" element={<Projects />} />
-      </Routes>
-      <Footer />
-    </Router>
+    <SnackbarProvider maxSnack={3}>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/index.jsx" element={<Contact />} />
+          <Route path="/projects.jsx" element={<Projects />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </SnackbarProvider>
   </StrictMode>,
 )
