@@ -99,11 +99,13 @@ h1 {
   .main-content h1 {
     font-size: 3rem;
     line-height: 120%;
+    margin-bottom: 1.25rem;
   }
 
   .main-content p {
     font-size: 1rem;
     line-height: 24px;
+    margin-bottom: 2.5rem;
   }
 
 }

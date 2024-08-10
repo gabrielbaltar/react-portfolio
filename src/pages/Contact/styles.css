@@ -263,6 +263,7 @@
         min-height: 56px;
         max-width: 96%;
         font-size: 1rem;
+        margin-bottom: 2rem;
     }
 
     .contact-container h1 {
@@ -279,6 +280,14 @@
     .contact-input textarea::placeholder {
         font-size: 1rem;
         font-weight: 400;
+    }
+
+    .contact-form button {
+        height: 3.5rem;
+        width: 100%;
+        font-size: 1rem;
+        font-weight: 500;
+        font-family: 'Inter', sans-serif;
     }
 
 }
