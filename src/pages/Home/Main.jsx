@@ -35,7 +35,9 @@ function Main() {
           <h2>
             My Work
           </h2>
-          <a href="#">Mais projetos</a>
+          <Link to="/projects.jsx">
+            <a href="#">Mais projetos</a>
+          </Link>
         </div>
         <div className='cards-container'>
           <div className='cards'> 
