@@ -247,26 +247,46 @@
         
     }
 
+    .contact-input label {
+        font-size: 1rem;
+    }
+
     .contact-input input {
         width: 100%;
         max-width: 96%;
+        height: 32px;
+        font-size: 1rem;
     }
     
     .contact-input textarea {
         width: 100%;
+        min-height: 56px;
         max-width: 96%;
+        font-size: 1rem;
     }
 
     .contact-container h1 {
         padding: 48px 0;
     }
 
+    
+
+    .contact-input input::placeholder {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
+    .contact-input textarea::placeholder {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
 
-    .contact-container h1 {
-        font-size: 2rem;
+    .contact-container {
+        padding: 0px 20px;
     }
 
     .contact-form button {
