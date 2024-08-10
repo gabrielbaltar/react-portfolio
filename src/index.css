@@ -19,11 +19,13 @@
 * {
   margin: 0px;
   padding: 0px;
+  
 }
 
 body {
   min-width: 320px;
   min-height: 100vh;
+  height: 100%;
   margin: 0px;
   font-family: "Inter", sans-serif;
   

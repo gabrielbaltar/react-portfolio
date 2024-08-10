@@ -5,6 +5,7 @@ import Main from './pages/Home/Main.jsx'
 import Contact from './pages/Contact/index.jsx'
 import Projects from './pages/Projects/projects.jsx'
 import Header from './components/Header/index.jsx'
+import Footer from './components/Footer/footer.jsx'
 import './index.css'
 
 createRoot(document.getElementById('root')).render(
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/index.jsx" element={<Contact />} />
         <Route path="/projects.jsx" element={<Projects />} />
       </Routes>
+      <Footer />
     </Router>
   </StrictMode>,
 )
