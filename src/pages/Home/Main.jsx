@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import Work from '../../components/Work/mywork.jsx'
+import Services from '../../components/Services/services.jsx'
+import { Helmet } from 'react-helmet' 
 
 import './Main.css'
 
@@ -7,7 +9,11 @@ function Main() {
 
   return (
     <>
-      
+      <Helmet>
+        <title>Página Inicial</title>
+        <meta name="description" content="Gabriel Baltar - UX/UI Designer e Desenvolvedor Front-End no Rio de Janeiro. Criando experiências visuais acessíveis e funcionais para a web." />
+      </Helmet>
+
       <main className="main-content">
 
         <div className='available-tag-main'>
@@ -32,8 +38,10 @@ function Main() {
 
       </main>
 
-      
+     
       <Work/>
+      <Services/>
+
     </>
   )
 }

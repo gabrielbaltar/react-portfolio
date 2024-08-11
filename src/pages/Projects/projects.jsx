@@ -1,4 +1,5 @@
 import './style.css';
+import { Helmet } from 'react-helmet';
 
 import Work from '../../components/Work/mywork.jsx';
 
@@ -18,6 +19,11 @@ const Projects = () => {
 
   return (
     <section className="projects">
+      <Helmet>
+        <title>Página Meus Projetos</title>
+        <meta name="description" content="Conheça os projetos de Gabriel Baltar, UX/UI Designer e Desenvolvedor Front-End no Rio de Janeiro." />
+      </Helmet>
+
       <div className='customize'>
         <Work customStyle={customStyle} />
       </div>

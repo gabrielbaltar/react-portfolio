@@ -1,6 +1,7 @@
 import './styles.css';
 import { useState } from 'react';
 import { useSnackbar } from 'notistack';
+import { Helmet } from 'react-helmet';
 
 
 const Contact = () => { 
@@ -46,13 +47,17 @@ const Contact = () => {
       }
     } catch (error) {
 
-      enqueueSnackbar('Erro ao enviar a mensagem. Verifique sua conexão e tente novamente.', { variant: 'error' });
+      error('Erro ao enviar a mensagem. Verifique sua conexão e tente novamente.', { variant: 'error' });
 
     }
   };
 
   return (
     <>
+      <Helmet>
+        <title>Página de Contato</title>
+        <meta name="description" content="Entre em contato com Gabriel Baltar para colaborar em projetos de UX/UI Design e Desenvolvimento Front-End." />
+      </Helmet>
         <section className="contact-container">
           <h1>Touch base via form or connect directly</h1>
           <div className='form-container'>
