@@ -1,5 +1,6 @@
+import './styles.css'
 
-const About() => {
+const About = () => {
 
     return (
         <div>

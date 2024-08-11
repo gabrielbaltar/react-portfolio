@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import Work from '../../components/Work/mywork.jsx'
 import Services from '../../components/Services/services.jsx'
+import About from '../../components/About/about.jsx'
 import { Helmet } from 'react-helmet' 
 
 import './Main.css'
@@ -41,6 +42,7 @@ function Main() {
      
       <Work/>
       <Services/>
+      <About/>
 
     </>
   )
