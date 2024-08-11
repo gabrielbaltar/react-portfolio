@@ -16,8 +16,8 @@ createRoot(document.getElementById('root')).render(
         <Header />
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/index.jsx" element={<Contact />} />
-          <Route path="/projects.jsx" element={<Projects />} />
+          <Route path="/contato" element={<Contact />} />
+          <Route path="/projetos" element={<Projects />} />
         </Routes>
         <Footer />
       </Router>

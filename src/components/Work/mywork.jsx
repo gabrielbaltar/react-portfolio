@@ -10,7 +10,7 @@ const Work = ({customStyle = {} }) => {
           <h2>
             My Works
           </h2>
-          <Link to="/projects.jsx" className='page-link'>
+          <Link to="/projetos" className='page-link'>
             <span style={customStyle.link} href="#">Mais projetos</span>
           </Link>
         </div>

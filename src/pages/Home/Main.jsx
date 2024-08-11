@@ -30,7 +30,7 @@ function Main() {
           strong passion for low-code as well as user interactions. 🚀
         </p>
 
-        <Link className="contact-link" to="/index.jsx">
+        <Link className="contact-link" to="/contato">
           <button>
             Entrar em contato
           </button>
