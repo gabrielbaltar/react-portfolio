@@ -1,0 +1,64 @@
+.service-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.services-title h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.services-title p {
+    font-size: 0.875rem;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.3px;
+    margin-bottom: 1rem;
+}
+
+.profile-image {
+    display: flex;
+    max-width: 100%;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.profile-image img {
+    max-width: 100%;
+    object-fit: contain;
+    place-self: start;
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+}
+
+.profile-content p {
+    text-align: start;
+    width: 100%;
+    font-size: 1rem;
+    color: #9E9E9E;
+    line-height: 1.5rem;
+    letter-spacing: -0.5px;
+}
+
+.social-media {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    width: 1.5rem;
+}
+
+.social-media img {
+    width: 1.5rem;
+    object-fit: contain;
+    cursor: pointer;
+}
