@@ -3,7 +3,7 @@ import CardThumb from '../../assets/card-thumb.png';
 import './styles.css';
 
 
-const Work = ({customStyle = {} }) => {
+const Work = ({customStyle = {}  }) => {
     return (
         <section style={customStyle.container} className='my-work-container'>
         <div className='title-and-link'>
