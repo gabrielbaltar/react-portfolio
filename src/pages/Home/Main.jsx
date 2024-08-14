@@ -31,15 +31,6 @@ function Main() {
           Greetings! Web Developer living in Brazil. I favor minimalistic designs with a
           strong passion for low-code as well as user interactions. 🚀
         </p>
-        <p>
-          Greetings! Web Developer living in Brazil. I favor minimalistic designs with a
-          strong passion for low-code as well as user interactions. 🚀
-        </p>
-        <p>
-          Greetings! Web Developer living in Brazil. I favor minimalistic designs with a
-          strong passion for low-code as well as user interactions. 🚀
-        </p>
-
         <Link className="contact-link" to="/contato">
           <button>
             Entrar em contato
