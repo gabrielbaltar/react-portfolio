@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react';
 
 const Work = ({customStyle = {}  }) => {
 
+    // Efeito para fazer o scroll da página para o topo
     useEffect(() => { 
       
       window.scrollTo({top: 0, behavior: 'smooth'});
