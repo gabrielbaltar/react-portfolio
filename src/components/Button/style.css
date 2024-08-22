@@ -17,14 +17,15 @@
     letter-spacing: -1px;
 }
 
-.button-container button {
-    height: 44px;
+.contact-button button {
+    height: 40px;
+    padding: 0px 1.125rem;
     border: none;
     color: #0A0A0A;
     border-radius: 0.75rem;
     background-color: #ffffff;
     cursor: pointer;
-    max-width: 156px;
+    max-width: 100%;
     width: 100%;
     font-weight: 500;
     font-family: 'Inter', sans-serif;
@@ -41,7 +42,7 @@
         margin-bottom: 72px;
     }
 
-    .button-container button {
+    .contact-button button {
         max-width: 100%;
         width: 100%;
         

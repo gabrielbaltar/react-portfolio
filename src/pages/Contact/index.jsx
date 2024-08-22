@@ -1,11 +1,19 @@
 import './styles.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useSnackbar } from 'notistack';
 import { Helmet } from 'react-helmet';
 
 
 const Contact = () => { 
 
+  // Função para rolar a página para o topo
+  useEffect(() => { 
+      
+    window.scrollTo({top: 0, behavior: 'smooth'});
+
+  }, []);
+
+  // Notificação de envio de mensagem
   const {enqueueSnackbar} = useSnackbar();
 
   const [formData, setFormData] = useState({
@@ -14,6 +22,7 @@ const Contact = () => {
     message: ''
   });
 
+  // Função para atualizar o estado do formulário e armazenar os dados do usuário
   const handleChange = (event) => {
     setFormData({
       ...formData,
@@ -21,6 +30,7 @@ const Contact = () => {
     });
   };
 
+  // Função para enviar a mensagem do usuário para o formspree
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
@@ -52,6 +62,7 @@ const Contact = () => {
     }
   };
 
+  // Renderização do componente
   return (
     <>
       <Helmet>
