@@ -78,8 +78,8 @@
     bottom: 0px;
     align-items: center;
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(4px); /* Aplica o desfoque */
-    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(7px); /* Aplica o desfoque */
+    -webkit-backdrop-filter: blur(7px);
     overflow: hidden;
     display: none; 
     transform: translateY(10px);
@@ -101,6 +101,19 @@
     cursor: pointer;
 }
 
+.card-title h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.card-title p {
+    font-size: 1rem;
+    letter-spacing: -0.3px;
+    line-height: 150%;
+    color: #CFCFCF;
+}
+
 .card-tag {
     
     padding: 1.5rem;
@@ -110,7 +123,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: opacity 0.3s ease, transform 0.3s ease, scale 0.3s ease;
     
 }
 
