@@ -5,13 +5,13 @@ import LinkedinIcon from '../../assets/linkedin.svg'
 import InstagramIcon from '../../assets/instagram.svg'
 import { Link } from 'react-router-dom'
 
-const About = () => {
+const About = ({ customStylePersonal = {} }) => {
 
     return (
         <section className='service-container'>
             <div className='services-title'>
                 <h1>Sobre</h1>
-                <Link to={'/sobre'}>
+                <Link style={customStylePersonal.linkDetails}  to={'/sobre'}>
                     <p>Mais detalhes</p>
                 </Link>
             </div>

@@ -1,9 +1,9 @@
 import './style.css';
 import { Link } from 'react-router-dom';
 
-const Button = () => {
+const Button = ({ customStylePersonal = {} }) => {
     return (
-        <section className='button-container'>
+        <section style={customStylePersonal.buttonContainerMargin} className='button-container'>
             <h2>Let's discuss the upcoming big sensation!</h2>
 
             <Link className='contact-button' to="/contato">

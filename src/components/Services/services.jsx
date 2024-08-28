@@ -1,12 +1,12 @@
 import './styles.css';
 
-const Services = () => {
+const Services = ({ customStylePersonal = {} }) => {
     
     return (
-      <section className="services-container">
+      <section style={customStylePersonal.buttonContainerMargin} className="services-container">
         <div className="services-title">
           <h2>Serviços</h2>
-          <a href="#">Mais serviços</a>
+          <a style={customStylePersonal.linkDetails} href="#">Mais serviços</a>
         </div>
         <div className="services-content">
           <h3>Branding</h3>
