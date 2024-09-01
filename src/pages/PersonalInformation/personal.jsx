@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import About from "../../components/About/about";
 import Services from "../../components/Services/services";
 import Button from "../../components/Button/button";
+import InstagramIcon from '../../assets/instagram.svg'
 import './styles.css'
 
 const Personal = () => {
@@ -28,17 +29,33 @@ const Personal = () => {
   }
 
   return (
+    <section className="personal-information-container">
+      <About customStylePersonal={customStylePersonal} />
 
-    <section className='personal-information-container'>
-        <div>
-            <About customStylePersonal={customStylePersonal} />
-            {/* <h1>About Pagesadas</h1> */}
-
-            <Services customStylePersonal={customStylePersonal} />
-            <Button customStylePersonal={customStylePersonal} />
+      <div className="my-expirience">
+        <h2>Minhas Experiência</h2>
+        <div className="my-expirience-professional">
+          <div className="company-content">
+            <img src={InstagramIcon} alt="Logo da empresa" />
+            <div className="company-name">
+              <h3>Google</h3>
+              <p>UX/UI Designer</p>
+            </div>
+          </div>
+          <div className="work-description">
+              <p>
+                My role involves undertaking extensive research and user
+                testing, engaging in ideation, and developing wireframes. I'm
+                dedicated to crafting refined, high-fidelity user experiences
+                and interfaces for iOS, Android, and Web platforms.{" "}
+              </p>
+            </div>
         </div>
+      </div>
+
+      <Services customStylePersonal={customStylePersonal} />
+      <Button customStylePersonal={customStylePersonal} />
     </section>
-    
   );
 }
 
