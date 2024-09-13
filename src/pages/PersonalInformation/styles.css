@@ -13,6 +13,14 @@
     gap: 2.5rem;
 }
 
+.my-expirience h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Inter' sans-serif;
+    letter-spacing: -1px;
+    line-height: 100%;
+}
+
 .my-expirience-professional {
     width: 100%;
     display: flex;
@@ -22,15 +30,66 @@
 .company-content {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 80%;
 }
+
 .company-content img {
     width: 48px;
     height: 48px;
     margin-right: 1rem;
 }
 
+.company-name h3 {
+    font-size: 24px;
+    line-height: 100%;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.company-name p {
+    color: #9E9E9E;
+    font-size: 1rem;
+    letter-spacing: -0.5px;
+    line-height: 150%;
+}
+
 .work-description {
-    max-width: 536px;
+    max-width: 586px;
     width: 100%;
+}
+
+.work-description p {
+    color: #9E9E9E;
+    letter-spacing: -0.5px;
+    line-height: 150%;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 761px) {
+
+.my-expirience-professional {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    gap: 1rem;
+}
+
+.my-expirience {
+    padding: 0 20px;
+    margin: 1rem 0;
+}
+
+.work-description{
+    width: 100%;
+    max-width: 100%;
+}
+
+.company-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+} 
+
 }

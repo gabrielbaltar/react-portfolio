@@ -2,7 +2,9 @@ import { useEffect } from "react";
 import About from "../../components/About/about";
 import Services from "../../components/Services/services";
 import Button from "../../components/Button/button";
-import InstagramIcon from '../../assets/instagram.svg'
+import Spotify from '../../assets/spotify.svg'
+import GoogleIcon from '../../assets/google.svg';
+import AppleIcon from '../../assets/apple.svg';
 import './styles.css'
 
 const Personal = () => {
@@ -36,7 +38,7 @@ const Personal = () => {
         <h2>Minhas Experiência</h2>
         <div className="my-expirience-professional">
           <div className="company-content">
-            <img src={InstagramIcon} alt="Logo da empresa" />
+            <img src={GoogleIcon} alt="Logo da empresa" />
             <div className="company-name">
               <h3>Google</h3>
               <p>UX/UI Designer</p>
@@ -45,7 +47,41 @@ const Personal = () => {
           <div className="work-description">
               <p>
                 My role involves undertaking extensive research and user
-                testing, engaging in ideation, and developing wireframes. I'm
+                testing, engaging in ideation, and developing wireframes.
+                dedicated to crafting refined, high-fidelity user experiences
+                and interfaces for iOS, Android, and Web platforms.{" "}
+              </p>
+            </div>
+        </div>
+        <div className="my-expirience-professional">
+          <div className="company-content">
+            <img src={Spotify} alt="Logo da empresa" />
+            <div className="company-name">
+              <h3>Spotify</h3>
+              <p>UX/UI Designer</p>
+            </div>
+          </div>
+          <div className="work-description">
+              <p>
+                My role involves undertaking extensive research and user
+                testing, engaging in ideation, and developing wireframes. 
+                dedicated to crafting refined, high-fidelity user experiences
+                and interfaces for iOS, Android, and Web platforms.{" "}
+              </p>
+            </div>
+        </div>
+        <div className="my-expirience-professional">
+          <div className="company-content">
+            <img src={AppleIcon} alt="Logo da empresa" />
+            <div className="company-name">
+              <h3>Apple</h3>
+              <p>UX/UI Designer</p>
+            </div>
+          </div>
+          <div className="work-description">
+              <p>
+                My role involves undertaking extensive research and user
+                testing, engaging in ideation, and developing wireframes.
                 dedicated to crafting refined, high-fidelity user experiences
                 and interfaces for iOS, Android, and Web platforms.{" "}
               </p>
