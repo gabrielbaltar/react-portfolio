@@ -1,4 +1,5 @@
 import './styles.css';
+import { Link } from 'react-router-dom';
 
 const Services = ({ customStylePersonal = {} }) => {
     
@@ -6,7 +7,9 @@ const Services = ({ customStylePersonal = {} }) => {
       <section style={customStylePersonal.buttonContainerMargin} className="services-container">
         <div className="services-title">
           <h2>Serviços</h2>
-          <a style={customStylePersonal.linkDetails} href="#">Mais serviços</a>
+          <Link to={'./profesionalServices'}>
+            <a style={customStylePersonal.linkDetails} href="#">Mais serviços</a>
+          </Link>
         </div>
         <div className="services-content">
           <h3>Branding</h3>

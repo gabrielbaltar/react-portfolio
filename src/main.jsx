@@ -8,6 +8,7 @@ import Header from './components/Header/index.jsx'
 import Footer from './components/Footer/footer.jsx'
 import Personal from './pages/PersonalInformation/personal.jsx';
 import { SnackbarProvider } from 'notistack';
+import ProfesionalServices from './pages/ProfesionalServices/profesionalServices.jsx';
 import './index.css'
 
 createRoot(document.getElementById('root')).render(
@@ -20,6 +21,7 @@ createRoot(document.getElementById('root')).render(
           <Route path="/contato" element={<Contact />} />
           <Route path="/projetos" element={<Projects />} />
           <Route path="/sobre" element={<Personal />} />
+          <Route path="/profesionalServices" element={<ProfesionalServices/>} />
         </Routes>
         <Footer />
       </Router>
