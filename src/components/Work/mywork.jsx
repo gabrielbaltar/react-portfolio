@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
-import CardThumb from '../../assets/card-thumb.png';
+import imageOne from '../../assets/image1.png';
+import imageTwo from '../../assets/image2.png';
+import imageThree from '../../assets/image4.png';
 import ArrowIcon from '../../assets/arrow-right.svg';
 import './styles.css';
 import { useEffect, useState } from 'react';
@@ -69,7 +71,7 @@ const Work = ({customStyle = {}  }) => {
               <a href="#">
                 <img
                   className={hoveredCards[index] ? 'scale' : ''}
-                  src={CardThumb}
+                  src={imageOne}
                   alt="Capa do projeto"
                 />
               </a>
@@ -96,7 +98,7 @@ const Work = ({customStyle = {}  }) => {
               <a href="#">
                 <img
                   className={hoveredCards[index + 2] ? 'scale' : ''}
-                  src={CardThumb}
+                  src={imageTwo}
                   alt="Capa do projeto"
                 />
               </a>
@@ -123,7 +125,7 @@ const Work = ({customStyle = {}  }) => {
               <a href="#">
                 <img
                   className={hoveredCards[index + 4] ? 'scale' : ''}
-                  src={CardThumb}
+                  src={imageThree}
                   alt="Capa do projeto"
                 />
               </a>
