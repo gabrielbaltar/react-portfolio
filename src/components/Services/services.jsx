@@ -36,7 +36,7 @@ const Services = ({ customStylePersonal = {} }) => {
           <h3>Testing</h3>
           <p>
             By comprehensive research and evaluation, I attain instinctive
-            layout. I gather knowledge to understand the needs.
+            layout.
           </p>
         </div>
       </section>
