@@ -28,7 +28,7 @@ const About = ({ customStylePersonal = {} }) => {
                     I have experience working on a variety of projects, from mobile apps to web platforms,
                     always focusing on the  needs and preferences. My approach is collaborative
                     and iterative, involving clients and users at every stage to ensure the final product not
-                    only meets but exceeds expectations.
+                    only meets but exceeds.
                     </p>
                     <div className='social-media'>
                         <img src={LinkGithubIcon} alt="Ícone do Github" />
