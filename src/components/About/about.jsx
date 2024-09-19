@@ -34,11 +34,11 @@ const About = ({ customStylePersonal = {} }) => {
                         <img src={LinkGithubIcon} alt="Ícone do Github" />
                         <img src={LinkedinIcon} alt="Ícone do Github" />
                         <img src={InstagramIcon} alt="Ícone do Github" />
-                    </div>
+                    </div> 
                 </div>
             </div>
         </section>
     )
-}
+} 
 
 export default About;
