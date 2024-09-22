@@ -17,7 +17,7 @@
     font-weight: 400;
     letter-spacing: -1px;
 }
-  
+
 .title-and-link span {
     text-decoration: none;
     color: #ffffff;
@@ -33,7 +33,8 @@
 
 .cards-container {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 0px 2rem;
     gap: 1rem;
 }
@@ -43,28 +44,29 @@
     border-radius: 1rem;
     position: relative;
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    flex-direction: column; /* Adicionado para empilhar conteúdo verticalmente */
+    width: calc(50% - 0.5rem); /* Ajuste para duas colunas */ 
     transition: transform 0.3s ease;
     object-fit: cover;
+    max-width: 460px;
 }
+
 
 .cards a {
     display: block;
-    max-width: 460px;
-    width: 100%;
+    width: 100%; /* Garantir que a imagem ocupe toda a largura do card */
 }
-  
+
 .cards a img {
-    display: flex;
+    display: block;
     height: auto;
     border-radius: 1rem;
     transition: transform 0.3s;
-    object-fit: cover;
-    width: 100%;
-    max-width: 460px;
+    object-fit: cover;  
+    width: 100%; /* Imagem ocupa toda a largura do link */
 }
-  
+
+
 .scale {
     transform: scale(1.05);
 }
@@ -115,7 +117,6 @@
 }
 
 .card-tag {
-    
     padding: 1.5rem;
     margin: 2rem;
     background: #ffffff;
@@ -123,7 +124,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 .card-tag a img  {
@@ -133,43 +133,52 @@
 
 @media screen and (max-width: 1000px) {
 
-.cards-container {
-    display: flex;
-    justify-content: center;
-    padding: 0px 20px;
-    gap: 1rem;
-}
+    .cards-container {
+        display: flex;
+        justify-content: center;
+        padding: 0px 20px;
+        gap: 1rem;
+    }
 
-.my-work-container {
-    margin-bottom: 3.5rem;
-}
-  
-}
+    .my-work-container {
+        margin-bottom: 3.5rem;
+    }
 
-@media screen and (max-width: 500px) {
-  
-.my-work-container {
-    gap: 1rem;
-}
-
-.cards-container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.cards {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
+    .cards {
+        overflow: hidden;
+        border-radius: 1rem;
+        position: relative;
+        display: flex;
+        flex-direction: column; /* Adicionado para empilhar conteúdo verticalmente */
+        /* width: calc(40% - 0.5rem); Ajuste para duas colunas  */
+        transition: transform 0.3s ease;
+        object-fit: cover;
+        /* width: 100%; */
+    }
     
 }
 
-@media screen and (max-width: 450px) {
-  
-.title-and-link {
-    margin-bottom: 1rem;
+@media screen and (max-width: 500px) {
+    .my-work-container {
+        gap: 1rem;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+    }
 }
-  
+
+@media screen and (max-width: 450px) {
+    .title-and-link {
+        margin-bottom: 1rem;
+    }
 }
