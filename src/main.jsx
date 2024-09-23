@@ -10,6 +10,7 @@ import Personal from './pages/PersonalInformation/personal.jsx';
 import { SnackbarProvider } from 'notistack';
 import ProfesionalServices from './pages/ProfesionalServices/profesionalServices.jsx';
 import ProjectDetails from './pages/ProjectDetails/projectsDetails.jsx';
+import ProjectTwo from './pages/ProjectTwo/projectTwo.jsx';
 import './index.css'
 
 createRoot(document.getElementById('root')).render(
@@ -24,6 +25,7 @@ createRoot(document.getElementById('root')).render(
           <Route path="/sobre" element={<Personal />} />
           <Route path="/profesionalServices" element={<ProfesionalServices/>} />
           <Route path="/project" element={<ProjectDetails />} />
+          <Route path="/projectTwo" element={<ProjectTwo />} />
         </Routes>
         <Footer />
       </Router>

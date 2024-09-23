@@ -47,7 +47,7 @@ const Work = ({ customStyle = {} }) => {
       title: 'Título do Card 2',
       description: 'Descrição 2',
       image: imageTwo,
-      link: '/pagina2',
+      link: '/projectTwo',
     },
     {
       title: 'Título do Card 3',
@@ -91,6 +91,7 @@ const Work = ({ customStyle = {} }) => {
             onMouseLeave={() => handleMouseLeave(index)}
             className="cards"
           >
+        <a href={card.link}>
             <Link href={card.link}>
               <img
                 className={hoveredCards[index] ? 'scale' : ''}
@@ -104,11 +105,10 @@ const Work = ({ customStyle = {} }) => {
                 <p>{card.description}</p>
               </div>
               <div className="card-tag">
-                <a href={card.link}>
                   <img src={ArrowIcon} alt="Seta do botão do card" />
-                </a>
               </div>
             </div>
+                </a>
           </div>
         ))}
       </div>

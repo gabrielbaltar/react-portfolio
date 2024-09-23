@@ -39,6 +39,10 @@
     gap: 1rem;
 }
 
+.cards-container a {
+    color: #fff;
+}
+
 .cards {
     overflow: hidden;
     border-radius: 1rem;
