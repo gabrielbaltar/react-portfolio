@@ -1,5 +1,6 @@
 import './styles.css';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const Services = ({ customStylePersonal = {} }) => {
     
@@ -41,6 +42,12 @@ const Services = ({ customStylePersonal = {} }) => {
         </div>
       </section>
     );
+};
+
+// Declarar a Props do componente
+
+Services.propTypes = {
+  customStylePersonal: PropTypes.object,
 };
 
 export default Services;

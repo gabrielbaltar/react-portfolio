@@ -4,6 +4,7 @@ import LinkGithubIcon from '../../assets/link.svg'
 import LinkedinIcon from '../../assets/linkedin.svg'
 import InstagramIcon from '../../assets/instagram.svg'
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 const About = ({ customStylePersonal = {} }) => {
 
@@ -40,5 +41,9 @@ const About = ({ customStylePersonal = {} }) => {
         </section>
     )
 } 
+
+About.propTypes = {
+    customStylePersonal: PropTypes.object,
+};
 
 export default About;

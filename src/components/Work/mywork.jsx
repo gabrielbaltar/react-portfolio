@@ -7,17 +7,24 @@ import imageFour from '../../assets/image4.png';
 import imageFive from '../../assets/image5.png';
 import ArrowIcon from '../../assets/arrow-right.svg';
 import { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
+
+// Componente que renderiza os cards dos projetos
 
 const Work = ({ customStyle = {} }) => {
+
   // Efeito para fazer o scroll da página para o topo
+
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
 
   // Estado para armazenar os cards que estão sendo hovereados
+
   const [hoveredCards, setHoveredCards] = useState(Array(6).fill(false));
 
   // Função para atualizar o estado dos cards que estão sendo hovereados (true)
+
   const handleMouseEnter = (index) => {
     setHoveredCards((prev) => {
       const newHoveredCards = [...prev];
@@ -27,6 +34,7 @@ const Work = ({ customStyle = {} }) => {
   };
 
   // Função para atualizar o estado dos cards que estão sendo hovereados (false)
+
   const handleMouseLeave = (index) => {
     setHoveredCards((prev) => {
       const newHoveredCards = [...prev];
@@ -36,6 +44,7 @@ const Work = ({ customStyle = {} }) => {
   };
 
   // Dados dos cards com imagens e links individuais
+  
   const cardsData = [
     {
       title: 'Sebrae',
@@ -113,6 +122,12 @@ const Work = ({ customStyle = {} }) => {
       </div>
     </section>
   );
+};
+
+// Declarar a Props do componente
+
+Work.propTypes = {
+  customStyle: PropTypes.object,
 };
 
 export default Work;

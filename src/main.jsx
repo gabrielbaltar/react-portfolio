@@ -30,5 +30,5 @@ createRoot(document.getElementById('root')).render(
         <Footer />
       </Router>
     </SnackbarProvider>
-  </StrictMode>,
+  </StrictMode>
 )
