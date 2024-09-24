@@ -91,24 +91,23 @@ const Work = ({ customStyle = {} }) => {
             onMouseLeave={() => handleMouseLeave(index)}
             className="cards"
           >
-        <a href={card.link}>
-            <Link href={card.link}>
+          
+            <Link to={card.link}>
               <img
                 className={hoveredCards[index] ? 'scale' : ''}
                 src={card.image}
                 alt={`Capa do projeto ${index + 1}`}
               />
-            </Link>
-            <div className={`card-name ${hoveredCards[index] ? 'visible' : ''}`}>
-              <div className="card-title">
-                <h2>{card.title}</h2>
-                <p>{card.description}</p>
-              </div>
-              <div className="card-tag">
+              <div className={`card-name ${hoveredCards[index] ? 'visible' : ''}`}>
+                <div className="card-title">
+                  <h2>{card.title}</h2>
+                  <p>{card.description}</p>
+                </div>
+                <div className="card-tag">
                   <img src={ArrowIcon} alt="Seta do botão do card" />
+                </div>
               </div>
-            </div>
-                </a>
+            </Link>
           </div>
         ))}
       </div>
