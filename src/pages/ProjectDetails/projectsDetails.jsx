@@ -1,4 +1,5 @@
 import './style.css';
+import ProjectThumb1 from '../../assets/capa.png';
 
 const ProjectDetails = () => { 
 
@@ -6,7 +7,23 @@ const ProjectDetails = () => {
 
     return (
 
-        <h2>Olá, Mundo!</h2>
+        <section className='projectContainer'>
+
+            <div className='projectThumb1'>
+                <img src={ProjectThumb1} alt="Capa dos projetos" />
+            </div>
+
+            <div className='projectIntro'>
+
+                {/* <h2>EvokeEssence</h2> */}
+
+                <div className='projectIntroInformation'>
+
+                </div>
+            </div>
+
+        </section>
+
         
     )
 

@@ -1,0 +1,15 @@
+.projectContainer{
+    margin: 1.25rem;
+}
+
+.projectThumb1 img{
+
+    max-width: 100%;
+    height: 550px;
+    width: 952px;
+    margin: 0 auto;   
+    object-fit: cover;
+    border-radius: 0.75rem;
+    display: block;
+
+}
