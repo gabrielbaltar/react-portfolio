@@ -32,9 +32,15 @@ const About = ({ customStylePersonal = {} }) => {
                     only meets but exceeds.
                     </p>
                     <div className='social-media'>
-                        <img src={LinkGithubIcon} alt="Ícone do Github" />
-                        <img src={LinkedinIcon} alt="Ícone do Github" />
-                        <img src={InstagramIcon} alt="Ícone do Github" />
+                        <a  target="_blank" rel="noopener noreferrer" href="https://github.com/gabrielbaltar?tab=overview&from=2024-09-01&to=2024-09-28" aria-label="Visite o meu perfil no Github"> 
+                            <img src={LinkGithubIcon} alt="Ícone do Github" /> 
+                        </a>
+                        <a  target="_blank" rel="noopener noreferrer" href="https://github.com/gabrielbaltar?tab=overview&from=2024-09-01&to=2024-09-28" aria-label="Visite o meu perfil no Github"> 
+                            <img src={LinkedinIcon} alt="Ícone do Linkedin" />
+                        </a>
+                        <a  target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/gbbaltar/" aria-label="Visite o meu perfil no Instagram"> 
+                            <img src={InstagramIcon} alt="Ícone do Github" />
+                        </a>
                     </div> 
                 </div>
             </div>

@@ -54,13 +54,14 @@
     display: flex;
     gap: 1rem;
     margin-top: 1.5rem;
-    width: 1.5rem;
 }
 
-.social-media img {
-    width: 1.5rem;
+.social-media a img{
+    height: 2rem;
+    width: 2rem;
     object-fit: contain;
     cursor: pointer;
+    z-index: 1;
 }
 
 @media screen and (max-width: 689px) {
