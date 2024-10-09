@@ -87,6 +87,33 @@
     letter-spacing: -0.5px;
 }
 
+.processContainer {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    text-align: left;
+    max-width: 100%;
+    margin-bottom: 10rem;
+}
+
+.processContainer h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: -0.1px;
+    color: #ffffff;
+    line-height: 100%;
+    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.processContainer p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #9E9E9E;
+    line-height: 150%;
+    letter-spacing: -0.5px;
+}
+
 @media screen and (max-width: 650px) {
 
     .projectIntro h2 {
