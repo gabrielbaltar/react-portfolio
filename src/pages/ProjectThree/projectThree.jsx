@@ -1,22 +1,12 @@
 import './style.css';
-import ProjectThumb1 from '../../assets/image1.png';
-import { useEffect } from 'react';
+import ProjectThumb3 from '../../assets/image3.png';
 
-const ProjectDetails = () => { 
-
-    // Efeito para fazer o scroll da página para o topo
-    useEffect(() => { 
-      
-        window.scrollTo({top: 0, behavior: 'smooth'});
-
-    }, []);
-
-    // Aqui será a página de detalhes do projeto
-
+const projectDetails2 = () => {
     return (
-      <section className="projectContainer">
+        
+        <section className="projectContainer">
         <div className="projectThumb1">
-          <img src={ProjectThumb1} alt="Capa dos projetos" />
+          <img src={ProjectThumb3} alt="Capa dos projetos" />
         </div>
 
         <div className="projectIntro">
@@ -72,11 +62,11 @@ const ProjectDetails = () => {
 
         <div className='thumbs'>
           <div className="projectThumb1">
-            <img src={ProjectThumb1} alt="Capa dos projetos" />
+            <img src={ProjectThumb3} alt="Capa dos projetos" />
           </div>
 
           <div className="projectThumb1">
-            <img src={ProjectThumb1} alt="Capa dos projetos" />
+            <img src={ProjectThumb3} alt="Capa dos projetos" />
           </div>
        </div>
 
@@ -95,11 +85,11 @@ const ProjectDetails = () => {
 
        <div className='thumbs'>
         <div className="projectThumb1">
-            <img src={ProjectThumb1} alt="Capa dos projetos" />
+            <img src={ProjectThumb3} alt="Capa dos projetos" />
           </div>
 
           <div className="projectThumb1">
-            <img src={ProjectThumb1} alt="Capa dos projetos" />
+            <img src={ProjectThumb3} alt="Capa dos projetos" />
           </div>
        </div>
 
@@ -119,8 +109,8 @@ const ProjectDetails = () => {
           </p>
         </div>
       </section>
+
     );
+};
 
-}
-
-export default ProjectDetails;
+export default projectDetails2;

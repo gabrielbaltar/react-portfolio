@@ -1,6 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop/scrollToTop.jsx';
 import Main from './pages/Home/Main.jsx'
 import Contact from './pages/Contact/index.jsx'
 import Projects from './pages/Projects/projects.jsx'
@@ -11,6 +12,10 @@ import { SnackbarProvider } from 'notistack';
 import ProfesionalServices from './pages/ProfesionalServices/profesionalServices.jsx';
 import ProjectDetails from './pages/ProjectDetails/projectsDetails.jsx';
 import ProjectTwo from './pages/ProjectTwo/projectTwo.jsx';
+import ProjectThree from './pages/ProjectThree/projectThree.jsx';
+import ProjectFour from './pages/ProjectFour/projectFour.jsx';
+import ProjectFive from './pages/ProjectFive/projectFive.jsx';
+import ProjectSix from './pages/ProjectSix/projectSix.jsx';
 import './index.css'
 
 createRoot(document.getElementById('root')).render(
@@ -18,6 +23,7 @@ createRoot(document.getElementById('root')).render(
     <SnackbarProvider maxSnack={3}>
       <Router>
         <Header />
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/contato" element={<Contact />} />
@@ -26,6 +32,10 @@ createRoot(document.getElementById('root')).render(
           <Route path="/profesionalServices" element={<ProfesionalServices/>} />
           <Route path="/project" element={<ProjectDetails />} />
           <Route path="/projectTwo" element={<ProjectTwo />} />
+          <Route path="/projectThree" element={<ProjectThree />} />
+          <Route path="/projectFour" element={<ProjectFour />} />
+          <Route path="/projectFive" element={<ProjectFive />} />
+          <Route path="/projectSix" element={<ProjectSix />} />
         </Routes>
         <Footer />
       </Router>

@@ -5,6 +5,7 @@ import imageTwo from '../../assets/image2.png';
 import imageThree from '../../assets/image3.png';
 import imageFour from '../../assets/image4.png';
 import imageFive from '../../assets/image5.png';
+import imageSix from '../../assets/card-thumb.png';
 import ArrowIcon from '../../assets/arrow-right.svg';
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
@@ -47,8 +48,8 @@ const Work = ({ customStyle = {} }) => {
   
   const cardsData = [
     {
-      title: 'Sebrae',
-      description: 'Descrição 1',
+      title: 'Sebrae Magento',
+      description: 'E-commerce criado para o Sebrae com o CMS Magento',
       image: imageOne,
       link: '/project',
     },
@@ -62,25 +63,25 @@ const Work = ({ customStyle = {} }) => {
       title: 'Título do Card 3',
       description: 'Descrição 3',
       image: imageThree,
-      link: '/pagina3',
+      link: '/projectThree',
     },
     {
       title: 'Título do Card 4',
       description: 'Descrição 4',
       image: imageFour,
-      link: '/pagina4',
+      link: '/projectFour',
     },
     {
       title: 'Título do Card 5',
       description: 'Descrição 5',
       image: imageFive,
-      link: '/pagina5',
+      link: '/projectFive',
     },
     {
       title: 'Dashboard',
       description: 'Descrição 6',
-      image: imageFive,
-      link: '/pagina6',
+      image: imageSix,
+      link: '/projectSix',
     },
   ];
 

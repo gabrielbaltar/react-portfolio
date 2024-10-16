@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import About from "../../components/About/about";
 import Services from "../../components/Services/services";
 import Button from "../../components/Button/button";
@@ -8,13 +7,6 @@ import AppleIcon from '../../assets/apple.svg';
 import './styles.css'
 
 const Personal = () => {
-
-  // Efeito para fazer o scroll da página para o topo
-  useEffect(() => { 
-      
-    window.scrollTo({top: 0, behavior: 'smooth'});
-
-  }, []);
 
 
   // Estilos customizados para os componentes
