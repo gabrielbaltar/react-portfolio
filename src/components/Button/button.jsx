@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 const Button = ({ customStylePersonal = {} }) => {
     return (
         <section style={customStylePersonal.buttonContainerMargin} className='button-container'>
-            <h2>Let discuss the upcoming big sensation!</h2>
+            <h2>Entre em contato por e-mail ou telefone</h2>
 
             <Link className='contact-button' to="/contato">
                 <button>

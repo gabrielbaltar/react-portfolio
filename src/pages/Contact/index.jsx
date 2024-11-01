@@ -70,21 +70,19 @@ const Contact = () => {
         <meta name="description" content="Entre em contato com Gabriel Baltar para colaborar em projetos de UX/UI Design e Desenvolvimento Front-End." />
       </Helmet>
         <section className="contact-container">
-          <h1>Touch base via form or connect directly</h1>
+          <h1>Entrar em Contato via E-mail ou Telefone</h1>
           <div className='form-container'>
             <div className="contact">
               <div className="contact-number">
                 <span>Telefone</span>
-                <p>+21 98909 0580</p>
+                <p>+55 21 98909-0580</p>
               </div>
               <div className="contact-place">
-                <span>If you wish for a face-to-face discussion, find us at our office location</span>
-                <p>123 Artistic Lane, Los Angeles, CA 90001, U.S.A.</p>
+                <span>E-mail para contato</span>
+                <p>gabriel.baltar21@hotmail.com</p>
               </div>
               <p>
-                Share your ideas or aspirations with us, we are all ears. Our attentive
-                team is keen to understand, appreciate, and aid in bringing your
-                vision into reality.
+              Pronto para iniciar? Entre em contato e vamos transformar seus sonhos digitais em realidade!
               </p>
             </div>
             <div className="contact-form">

@@ -24,12 +24,11 @@ function Main() {
         </div> */}
 
         <h1>
-          Designing the Future, One Pixel at a Time
+          Desenhando o Futuro, Pixel por Pixel
         </h1>
 
         <p>
-          Greetings! Web Developer living in Brazil. I favor minimalistic designs with a
-          strong passion for low-code as well as user interactions. 🚀
+          Olá! Sou Gabriel Baltar, desenvolvedor front-end baseado no Rio de Janeiro, Brasil. Com um olhar voltado para o futuro da web, busco constantemente inovar e aprimorar a experiência digital. 🚀
         </p>
         <Link className="contact-link" to="/contato">
           <button>
