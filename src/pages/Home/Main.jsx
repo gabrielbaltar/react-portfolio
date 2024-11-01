@@ -18,10 +18,10 @@ function Main() {
 
       <main className="main-content">
 
-        <div className='available-tag-main'>
+        {/* <div className='available-tag-main'>
             <span></span>
             <p>Disponível para Freelas</p>
-        </div>
+        </div> */}
 
         <h1>
           Designing the Future, One Pixel at a Time
