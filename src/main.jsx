@@ -38,6 +38,7 @@ createRoot(document.getElementById('root')).render(
           <Route path="/projectSix" element={<ProjectSix />} />
         </Routes>
         <Footer />
+
       </Router>
     </SnackbarProvider>
   </StrictMode>

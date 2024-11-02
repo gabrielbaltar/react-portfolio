@@ -90,6 +90,21 @@ h1 {
   
 }
 
+/* Main.css */
+
+.masked-element {
+  overflow: hidden;
+}
+
+.masked-element h1{
+  transform: translateY(100%);
+}
+
+.masked-element p {
+  transform: translateY(100%);
+}
+
+
 @media screen and (max-width: 768px) {
 
   .main-content {
