@@ -15,7 +15,7 @@ const Header = () => {
 
         <div className='available-tag'>
             <span></span>
-            <p>Disponível para Freelas</p>
+            <p>Disponível para trabalhos</p>
         </div>
 
         {/* <div className='menu-mobile-icon'>

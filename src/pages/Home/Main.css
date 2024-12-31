@@ -90,7 +90,7 @@ h1 {
   
 }
 
-/* Main.css */
+/* Main.css
 
 .masked-element {
   overflow: hidden;
@@ -102,7 +102,7 @@ h1 {
 
 .masked-element p {
   transform: translateY(100%);
-}
+} */
 
 
 @media screen and (max-width: 768px) {
