@@ -2,6 +2,7 @@ import './styles.css';
 import { useState, useEffect } from 'react';
 import { useSnackbar } from 'notistack';
 import { Helmet } from 'react-helmet';
+import downloadFile from '../../assets/download-icon.svg';
 
 
 const Contact = () => { 
@@ -73,13 +74,16 @@ const Contact = () => {
           <h1>Entrar em Contato via E-mail ou Telefone</h1>
           <div className='form-container'>
             <div className="contact">
-              <div className="contact-number">
-                <span>Telefone</span>
-                <p>+55 21 98909-0580</p>
-              </div>
               <div className="contact-place">
                 <span>E-mail para contato</span>
                 <p>gabriel.baltar21@hotmail.com</p>
+              </div>
+              <div className="contact-number">
+                <span>Currículo Profissional</span>
+                <a href='#'>
+                  <img src={downloadFile} alt="Ícone de download do arquivo" />
+                  <span id='texto-botao'>Baixar currículo</span>
+                </a>
               </div>
               <p>
               Pronto para iniciar? Entre em contato e vamos transformar seus sonhos digitais em realidade!
