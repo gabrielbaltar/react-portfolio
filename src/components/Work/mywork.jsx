@@ -5,7 +5,7 @@ import imageTwo from '../../assets/image2.png';
 import imageThree from '../../assets/image3.png';
 import imageFour from '../../assets/image4.png';
 import imageFive from '../../assets/image5.png';
-import imageSix from '../../assets/card-thumb.png';
+import imageSix from '../../assets/image6.png';
 import ArrowIcon from '../../assets/arrow-right.svg';
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
