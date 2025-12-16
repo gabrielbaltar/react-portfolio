@@ -39,7 +39,7 @@ function Main() {
 
       <main className="main-content">   
         <div className="masked-element" >
-          <h1>Desenhando o Futuro, Pixel por Pixel</h1>
+          <h1>Gabriel Baltar Pereira Product Designer</h1>
         </div>
 
         <div className="masked-element">
